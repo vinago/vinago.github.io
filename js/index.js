@@ -1,31 +1,31 @@
-$(document).ready(function(){
-	resizeLeftAndRight();
-	startToShow();
-	$(window).resize(function(){
+$(document).ready(function() {
+    resizeLeftAndRight();
+    startToShow();
+    $(window).resize(function() {
 
-		resizeLeftAndRight();
-	});
+        resizeLeftAndRight();
+    });
 });
 
 
-function resizeLeftAndRight(){
+function resizeLeftAndRight() {
 
-	console.log("reasize");
+    console.log("reasize");
 
-	$leftContainer=$("#leftContainer");
-	$rightContainer=$("#rightContainer");
-	$container=$("#container");
-	$mainDiv=$("#mainDiv");
+    $leftContainer = $("#leftContainer");
+    $rightContainer = $("#rightContainer");
+    $container = $("#container");
+    $mainDiv = $("#mainDiv");
 
 
 
-	var top=( $mainDiv.height()-$container.height() )/ 2 ;
-	$container.css({
-		position:'relative',
-		top:top+'px',
-	});
+    var top = ($mainDiv.height() - $container.height()) / 2;
+    $container.css({
+        position: 'relative',
+        top: top + 'px',
+    });
 }
 
-function startToShow(){
+function startToShow() {
 
 }
