@@ -19,7 +19,7 @@ function resizeLeftAndRight() {
 
 
 
-    var top = ($mainDiv.height() - $container.height()) / 2;
+    var top = ($(window).height() - $container.height()) / 2;
     $container.css({
         position: 'relative',
         top: top + 'px',
